@@ -17,7 +17,7 @@ petal_width=st.slider("Petal width(cm)",0.1,2.5,1.2)
 
 features=np.array([[sepal_length,sepal_width,petal_length,petal_width]])
 if st.button("Predict"):
-    predicition = model.predict(features)
+    prediction = model.predict(features)
     class_names=["Satosa","Versicolor","Virginica"]
     st.success(f"The Predicted Iris species is:{class_names[prediction[0]]}")
 
